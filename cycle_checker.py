@@ -29,7 +29,7 @@ class Graph:
         parent = None
         for i in range(self.V):
             if visited[i] is False:
-                if self.isCyclicUtil(i, visited, parent) is True:
+                if self.isCyclicUtil(i, visited, parent):
                     return True
         return False
 
@@ -37,9 +37,6 @@ class Graph:
 g = Graph(6)
 g.addEdge(1, 0)
 g.addEdge(1, 2)
-g.addEdge(2, 3)
-g.addEdge(3, 4)
-g.addEdge(4, 5)
 
 if g.isCyclic():
     print("Graph contains cycle")
