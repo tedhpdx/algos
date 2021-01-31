@@ -33,8 +33,10 @@ def find_cycle(graph):
 
 
 
+edge(0,1)
 edge(1,0)
-edge(1,2)
+edge(3,4)
+edge(4,5)
 
 if find_cycle(graph):
     print("yes a cycle exists")
